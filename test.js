@@ -8,7 +8,7 @@ function downloadImage(imageUrl, savePath) {
     https.get(imageUrl, (response) => {
         if (response.statusCode !== 200) {
             console.error(`Failed to get image: ${response.statusCode}`);
-            return;
+            return; 
         }
         
         response.pipe(file);
