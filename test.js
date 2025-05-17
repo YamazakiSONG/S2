@@ -9,7 +9,7 @@ function downloadImage(imageUrl, savePath) {
         if (response.statusCode !== 200) {
             console.error(`Failed to get image: ${response.statusCode}`);
             return; 
-        }
+        } 
         
         response.pipe(file);
         file.on('finish', () => {
